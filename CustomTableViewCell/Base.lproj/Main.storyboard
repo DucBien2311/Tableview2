@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="adn-if-tdw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--List-->
+        <scene sceneID="PB7-ed-qlS">
+            <objects>
+                <tableViewController id="HC4-il-FgG" customClass="MasterTableVC" customModule="CustomTableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="gup-jl-gHk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EPL Banner.jpg" id="7Tm-vg-c7v">
+                            <rect key="frame" x="0.0" y="64" width="375" height="76"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EPL.jpg" id="EPM-HV-OcY">
+                            <rect key="frame" x="0.0" y="258" width="375" height="74"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="90" id="Ccm-Af-qu6" customClass="CustemCellMaster" customModule="CustomTableViewCell" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="168" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ccm-Af-qu6" id="NGn-Nc-Gu1">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="89"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MU.png" translatesAutoresizingMaskIntoConstraints="NO" id="18j-xw-HD0">
+                                            <rect key="frame" x="14" y="5" width="80" height="80"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Manchester United" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Z4-7k-sRE">
+                                            <rect key="frame" x="106" y="5" width="197" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" red="0.99348849058151245" green="0.051226727664470673" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stadium: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMv-F0-ChW">
+                                            <rect key="frame" x="106" y="34" width="73" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.082352941176470587" green="0.0" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Old Trafford" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGN-39-a8R">
+                                            <rect key="frame" x="187" y="34" width="93" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.063605770468711853" green="0.12828329205513" blue="0.89800655841827393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Star Rating: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hv-yF-VHs">
+                                            <rect key="frame" x="106" y="56" width="94" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.019690779969096184" green="0.027107970789074898" blue="0.01097184419631958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5stars.png" translatesAutoresizingMaskIntoConstraints="NO" id="lGu-6j-vaE">
+                                            <rect key="frame" x="208" y="58" width="95" height="19"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageViewLogo" destination="18j-xw-HD0" id="sLq-dh-Vyt"/>
+                                    <outlet property="imageViewStarRating" destination="lGu-6j-vaE" id="Mlw-xh-IoC"/>
+                                    <outlet property="lblFoodballClub" destination="9Z4-7k-sRE" id="45h-QN-in2"/>
+                                    <outlet property="lblStadium" destination="YGN-39-a8R" id="xlJ-jU-20P"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HC4-il-FgG" id="AOA-GY-Jhl"/>
+                            <outlet property="delegate" destination="HC4-il-FgG" id="Feb-Jg-7YY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="List" id="kCG-6z-SBF"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ti-37-rMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2084.5" y="491.5"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="lrC-ZU-WAd">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" id="EzY-SE-QtF" customClass="DetailVC" customModule="CustomTableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dll-t3-92d"/>
+                        <viewControllerLayoutGuide type="bottom" id="T5u-N1-DpQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z8c-Zw-jkG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YVP-y9-gTt">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YVP-y9-gTt" firstAttribute="leading" secondItem="z8c-Zw-jkG" secondAttribute="leadingMargin" constant="-20" id="2EC-QJ-304"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YVP-y9-gTt" secondAttribute="trailing" constant="-20" id="60X-og-wG2"/>
+                            <constraint firstItem="T5u-N1-DpQ" firstAttribute="top" secondItem="YVP-y9-gTt" secondAttribute="bottom" id="Ge6-IM-Jej"/>
+                            <constraint firstItem="YVP-y9-gTt" firstAttribute="top" secondItem="z8c-Zw-jkG" secondAttribute="topMargin" id="eLM-Iq-Cdm"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="YVP-y9-gTt" id="dNl-iN-5rS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="drD-z5-VKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2492.5" y="491.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QAs-MN-RK1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="adn-if-tdw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K5b-nU-ahv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HC4-il-FgG" kind="relationship" relationship="rootViewController" id="Uux-qQ-jlb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a2q-RB-8Jg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="492"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="5stars.png" width="50" height="15"/>
+        <image name="EPL Banner.jpg" width="1023" height="58.080001831054688"/>
+        <image name="EPL.jpg" width="1532" height="1196"/>
+        <image name="MU.png" width="192" height="192"/>
+    </resources>
+</document>
